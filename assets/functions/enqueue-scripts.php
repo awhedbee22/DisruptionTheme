@@ -21,6 +21,9 @@ function joints_scripts_and_styles() {
 
     // Adding owl file in the footer
     wp_enqueue_script( 'owl-js', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array( 'jquery' ), '', true );
+    
+    // Adding parallax file in the footer
+    wp_enqueue_script( 'parallax-js', get_template_directory_uri() . '/assets/js/parallax.min.js', array( 'jquery' ), '', true );
 
     // Adding wave file in the footer
     wp_enqueue_script( 'wave-js', get_template_directory_uri() . '/assets/js/waves.min.js', array( 'jquery' ), '', true );
@@ -47,10 +50,10 @@ function joints_scripts_and_styles() {
     wp_enqueue_style( 'icons-css', get_template_directory_uri() . '/assets/css/materialdesignicons.min.css', array(), '', 'all' );
 
     // Register owl styles stylesheet
-    wp_enqueue_style( 'owl-css', get_template_directory_uri() . '/assets/css/owl.carousel.css', array(), '', 'all' );
+    wp_enqueue_style( 'owl-css', get_template_directory_uri() . '/assets/js/assets/owl.carousel.min.css', array(), '', 'all' );
 
     // Register owl theme stylesheet
-    wp_enqueue_style( 'theme-css', get_template_directory_uri() . '/assets/css/owl.theme.css', array(), '', 'all' );
+    wp_enqueue_style( 'theme-css', get_template_directory_uri() . '/assets/js/assets/owl.theme.default.css', array(), '', 'all' );
 
     // Register custom stylesheet
     wp_enqueue_style( 'custom-css', get_template_directory_uri() . '/assets/css/custom.css', array(), '', 'all' );
